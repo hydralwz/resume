@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>button</title>
+    <style>
+        .layout{
+            width: 600px;
+            text-align: center;
+        }
+        .button{
+            display: block;
+            float: left;
+            font-size: 22px;
+            line-height: 1.5em;
+            padding: 2px 10px;
+            margin-right: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .button:hover{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .button.style1{
+            background-color: #009688;
+            color: white;
+        }
+        .button.style2{
+            background-color: #ffeb3b;
+        }
+        .button.style3{
+            background-color: #ff9800;
+        }
+        .button.style4{
+            background-color: #f44336;
+            color: white;
+        }
+        .button.style5{
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <ul>
+            <li class="button style1"><a>steal</a></li>
+            <li class="button style2"><a>yellow</a></li>
+            <li class="button style3">orange</li>
+            <li class="button style4">red</li>
+            <li class="button style5">green</li>
+        </ul>
+    </div>
+</body>
+</html>
