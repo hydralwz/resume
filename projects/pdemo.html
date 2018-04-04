@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #fff2e3;
+            color: #87968e;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: #87968e;
+        }
+        a:hover{
+            color: #87968e;
+        }
+        a:visited{
+            color: #87968e;
+        }
+        .layout{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .header .intro{
+            margin: 30px 0px;
+            opacity: 0.4;
+        }
+        h1{
+            margin-top: 30px;
+            font-size: 42px;
+        }
+        .navbar ul{
+            list-style: none;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar ul::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .content{
+            margin: 20px 0px;
+        }
+        .btn{
+            display: inline-block;
+            margin: 3px;
+            padding: 6px 14px;
+            font-weight: normal;
+            border-radius: 2px;
+            background: #72b890;
+            color: white !important;
+        }
+        .content .view{
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">
+            <h1>我的项目</h1>
+            <p class="intro">一句话项目介绍</p>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="btn">项目一</a></li>
+                    <li><a href="#" class="btn">项目二</a></li>
+                    <li><a href="#" class="btn">项目三</a></li>
+                    <li><a href="#" class="btn">项目四</a></li>
+                    <li><a href="#" class="btn">项目五</a></li>
+                    <li><a href="#" class="btn">项目六</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="view">
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/65d4aba2-a097-4b24-aaa0-ebbaf7eedab2" alt="">
+            </div>
+            <a href="#" class="btn">查看源码</a>
+            <a href="#" class="btn">使用说明</a>
+        </div>
+        <div class="footer">
+            <p>作者：
+                <a href="#">我</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
