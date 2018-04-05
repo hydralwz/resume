@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sprite</title>
+    <style>
+        .image001,.image002,.image003 {
+	        background: url(img/sprites.png) no-repeat;
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+                only screen and (-o-min-device-pixel-ratio: 3/2), 
+                only screen and (min--moz-device-pixel-ratio: 1.5), 
+                only screen and (min-device-pixel-ratio: 1.5) {
+            .image001,.image002,.image003 { 
+                background: url(img/sprites@2x.png) no-repeat;
+                background-size:99px 33px;
+            }
+        }
+        .image001 {
+            background-position: -0px -0px;
+            height: 32px;
+            width: 32px;
+        }
+        .image002 {
+            background-position: -33px -0px;
+            height: 32px;
+            width: 32px;
+        }
+        .image003 {
+            background-position: -66px -0px;
+            height: 32px;
+            width: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image001"></div>
+    <div class="image002"></div>
+    <div class="image003"></div>
+</body>
+</html>
