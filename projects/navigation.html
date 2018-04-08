@@ -19,13 +19,9 @@
         }
         .nav{
             font-size: 18px;
-            padding: 10px 20px;
             float: left;
             cursor: pointer;
             position: relative;
-        }
-        .nav:hover{
-            background-color: #ccc;
         }
         .more{
             position: absolute;
@@ -33,22 +29,34 @@
             left: 0;
             display: none;
             background-color: #fff;
+            min-width: 160px;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
         }
-        .nav:last-child:hover .more{
+        .navbar>li:hover .more{
             display: block;
         }
         .morebar{
             list-style: none;
             padding: 0;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         }
         .morebar li{
-            width: 150px;
             font-size: 18px;
             padding: 10px 20px;
         }
         .morebar li:hover{
             background-color: #ccc;
+        }
+        .nav a{
+            display: block;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #333;
+        }
+        .nav a:hover{
+            background-color: #ccc;
+            color: #000;
         }
         .navbar::after{
             content: '';
@@ -60,9 +68,14 @@
 <body>
     <div class="layout">
         <ul class="navbar">
-            <li class="nav">首页</li>
-            <li class="nav">作品</li>
-            <li class="nav">更多
+            <li class="nav">
+                <a href="#">首页</a>
+            </li>
+            <li class="nav">
+                <a href="#">作品</a>
+            </li>
+            <li class="nav">
+                <a href="#">更多</a>
                 <div class="more">
                     <ul class="morebar">
                         <li>Github</li>
