@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fake</title>
+    <style>
+        .layout{
+            position: relative;
+            width: 200px;
+            height: 100px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+        }
+        .style1::before{
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            height: 0px;
+            width: 0px;
+            border-top: 15px solid #fff;
+            border-right: 15px solid #fff;
+            border-bottom: 15px solid grey;
+            border-left: 15px solid #fff;
+        }
+        .style2::before{
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: -1px;
+            height: 0px;
+            width: 0px;
+            border-top: 10px solid red;
+            border-right: 10px solid red;
+            border-bottom: 10px solid #fff;
+            border-left: 10px solid #fff;
+        }
+        .style3::before{
+            content: '';
+            position: absolute;
+            background: #fff;
+            top: -11px;
+            left: 30px;
+            height: 20px;
+            width: 20px;
+            border-top: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="layout style1"></div>
+    <div class="layout style2"></div>
+    <div class="layout style3"></div>
+</body>
+</html>
