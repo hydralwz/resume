@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>three-columnn</title>
+    <style>
+        .warp{
+            position: relative;
+            width: 80%;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .lside, .rside{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+        .lside{
+            top: 0;
+            left: 0;
+            background: red;
+        }
+        .content{
+            height: 300px;
+            margin: 0 210px;
+            background: pink;
+        }
+        .rside{
+            top: 0;
+            right: 0;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="lside"></div>
+        <div class="content"></div>
+        <div class="rside"></div>
+    </div>
+</body>
+</html>
