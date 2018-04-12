@@ -103,6 +103,72 @@ section {
     margin: 0 auto;
 }
 
+.about .content p {
+    margin-bottom: 0px;
+}
+
+.about .timeline li {
+    position: relative;
+    margin-top: 100px;
+}
+
+.about .timeline li p {
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.about .timeline li:nth-child(odd) {
+    text-align: right;
+    padding-right: calc(50% - 100px);
+}
+
+.about .timeline li:nth-child(even) {
+    text-align: left;
+    padding-left: calc(50% - 100px);
+}
+
+.about .timeline img {
+    margin: 0 25px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 7px solid #f1f1f1;
+}
+
+.about .timeline li:nth-child(odd)>img {
+    float: right;
+}
+
+.about .timeline li:nth-child(even)>img {
+    float: left;
+}
+
+.about .timeline .last {
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 100px;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    font-size: 20px;
+    background: #fed136;
+    border: 7px solid #f1f1f1;
+    padding: 25px;
+}
+
+.about .timeline>li::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 150px;
+    left: 50%;
+    margin-left: -1px;
+    height: 120px;
+    width: 2px;
+    background: #f1f1f1;
+}
+
 .team {
     background: #f7f7f7;
 }
@@ -138,6 +204,10 @@ section {
     font-style: normal;
 }
 
+.team-nember li a:hover {
+    background: #fed136;
+}
+
 .team-nember li a {
     display: inline-block;
     text-align: center;
@@ -147,6 +217,7 @@ section {
     background: #000;
     border-radius: 50%;
     line-height: 40px;
+    transition: all .3s;
 }
 
 .banner {
@@ -165,6 +236,7 @@ section {
 
 .contact {
     width: 100%;
+    color: #f1f1f1;
     background-color: #222;
     background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png);
     background-position: center;
@@ -251,6 +323,14 @@ footer i {
     padding: 0 1px;
     line-height: 50px;
     text-align: center;
+}
+
+.float-icon li a {
+    transition: all .3s;
+}
+
+.float-icon li a:hover {
+    background: #fed136;
 }
 
 .footer-last span {
