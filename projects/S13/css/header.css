@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+}
+
+header {
+    background: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+header .navbar {
+    height: 80px;
+    line-height: 80px;
+}
+
+header .logo {
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+    color: #fed136;
+    padding: 0 25px;
+}
+
+header .nav {
+    float: right;
+}
+
+header .nav li {
+    float: left;
+}
+
+header .nav li a {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px;
+}
+
+header .nav li a:hover {
+    color: #fed136;
+}
+
+header .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header .intro h2 {
+    font-size: 45px;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+header .intro h1 {
+    font-size: 55px;
+    color: #fff;
+    font-family: 'Candal', sans-serif;
+    font-weight: 900;
+    margin-bottom: 35px;
+}

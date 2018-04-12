@@ -1,0 +1,57 @@
+/*css reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*common*/
+
+body {
+    font: 17px/1.5 "微软雅黑";
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 65px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Candal', sans-serif;
+    width: 220px;
+    height: 65px;
+    background: #fed136;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background: #fec503;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Anton', sans-serif;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
