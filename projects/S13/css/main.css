@@ -133,6 +133,7 @@ section {
     height: 150px;
     border-radius: 50%;
     border: 7px solid #f1f1f1;
+    z-index: 1;
 }
 
 .about .timeline li:nth-child(odd)>img {
@@ -164,9 +165,10 @@ section {
     top: 150px;
     left: 50%;
     margin-left: -1px;
-    height: 120px;
+    height: 100%;
     width: 2px;
     background: #f1f1f1;
+    z-index: -1;
 }
 
 .team {
